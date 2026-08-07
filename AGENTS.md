@@ -27,11 +27,26 @@ New PRs use the template at [.github/PULL_REQUEST_TEMPLATE.md](.github/PULL_REQU
 
 This project follows [GitHub Flow](https://docs.github.com/en/get-started/using-github/github-flow): `main` is always deployable, work happens on short-lived feature branches, and changes land via pull request.
 
-1. Branch off `main` (e.g. `feature/x`, `fix/y`)
+1. Branch off `main` (see naming convention below)
 2. Commit and push changes
 3. Open a PR against `main`
 4. Merge (squash) once ready
 5. Sync local `main` and delete the local branch (see below)
+
+### Branch naming
+
+Branches are named `<type>/<issue-number>-<short-description>`, where `<type>` matches the issue/PR labels, with `enhancement` and `bug` shortened to `feat` and `fix`. The issue number may be omitted for small changes that don't have an associated issue:
+
+| Type | Label equivalent |
+|---|---|
+| `feat` | `enhancement` |
+| `fix` | `bug` |
+| `chore` | `chore` |
+| `refactor` | `refactor` |
+| `test` | `test` |
+| `docs` | `docs` |
+
+e.g. `feat/42-recurring-events`, `fix/57-timezone-offset`, `docs/readme-typo`
 
 ## Branch ruleset
 
