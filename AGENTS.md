@@ -18,3 +18,7 @@ Knot Forget Core — lightweight event-scheduling core for Rust.
 ## Issue template
 
 New issues use the general template at [.github/ISSUE_TEMPLATE/general.md](.github/ISSUE_TEMPLATE/general.md), with sections: Summary, Acceptance Criteria, Additional Notes, References.
+
+## PR template
+
+New PRs use the template at [.github/PULL_REQUEST_TEMPLATE.md](.github/PULL_REQUEST_TEMPLATE.md), with sections: Summary, Changes, Related Issue/s, Testing, Breaking Changes, Checklist.
