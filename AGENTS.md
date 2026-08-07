@@ -32,3 +32,11 @@ The `main` branch is protected by a repository ruleset ([source](https://github.
 - Changes must land via pull request
 - Merges must use squash merge
 - No required approving reviews (solo project)
+
+Merged branches are auto-deleted on the remote. After a PR merges, sync locally:
+
+```
+git checkout main
+git pull
+git branch -d <branch-name>
+```
