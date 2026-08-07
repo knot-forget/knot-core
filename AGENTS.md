@@ -14,3 +14,7 @@ Knot Forget Core — lightweight event-scheduling core for Rust.
 | `refactor` | Code refactoring |
 | `test` | Testing related |
 | `docs` | Documentation |
+
+## Issue template
+
+New issues use the general template at [.github/ISSUE_TEMPLATE/general.md](.github/ISSUE_TEMPLATE/general.md), with sections: Summary, Acceptance Criteria, Additional Notes, References.
