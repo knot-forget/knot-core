@@ -23,6 +23,16 @@ New issues use the general template at [.github/ISSUE_TEMPLATE/general.md](.gith
 
 New PRs use the template at [.github/PULL_REQUEST_TEMPLATE.md](.github/PULL_REQUEST_TEMPLATE.md), with sections: Summary, Changes, Related Issue/s, Testing, Breaking Changes, Checklist.
 
+## Git workflow
+
+This project follows [GitHub Flow](https://docs.github.com/en/get-started/using-github/github-flow): `main` is always deployable, work happens on short-lived feature branches, and changes land via pull request.
+
+1. Branch off `main` (e.g. `feature/x`, `fix/y`)
+2. Commit and push changes
+3. Open a PR against `main`
+4. Merge (squash) once ready
+5. Sync local `main` and delete the local branch (see below)
+
 ## Branch ruleset
 
 The `main` branch is protected by a repository ruleset ([source](https://github.com/knot-forget/knot-core/rules/20570866)):
