@@ -48,6 +48,20 @@ Branches are named `<type>/<issue-number>-<short-description>`, where `<type>` m
 
 e.g. `feat/42-recurring-events`, `fix/57-timezone-offset`, `docs/readme-typo`
 
+### Commit conventions
+
+Commits follow [Conventional Commits](https://www.conventionalcommits.org/): `<type>[optional scope]: <description>`, using the same `<type>` values as branch naming.
+
+- `feat:` a new feature
+- `fix:` a bug fix
+- `chore:` maintenance tasks
+- `refactor:` code change that neither fixes a bug nor adds a feature
+- `test:` adding or correcting tests
+- `docs:` documentation only changes
+- Append `!` after the type/scope (e.g. `feat!:`) or add a `BREAKING CHANGE:` footer for breaking changes
+
+e.g. `feat(scheduler): support recurring events`, `fix: correct timezone offset calculation`
+
 ## Branch ruleset
 
 The `main` branch is protected by a repository ruleset ([source](https://github.com/knot-forget/knot-core/rules/20570866)):
