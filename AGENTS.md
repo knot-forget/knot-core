@@ -62,6 +62,12 @@ Commits follow [Conventional Commits](https://www.conventionalcommits.org/): `<t
 
 e.g. `feat(scheduler): support recurring events`, `fix: correct timezone offset calculation`
 
+### Commit granularity
+
+Commit by concern, not by file: each commit should represent one logical change and include every file it touches, even across directories. Avoid splitting a single concern into multiple commits, and avoid bundling unrelated concerns into one.
+
+Do not split implementation, tests, and documentation for the same concern into separate commits — each commit should stay buildable and revertable on its own. Only give docs or tests their own commit when they address a genuinely unrelated concern.
+
 ## Branch ruleset
 
 The `main` branch is protected by a repository ruleset ([source](https://github.com/knot-forget/knot-core/rules/20570866)):
